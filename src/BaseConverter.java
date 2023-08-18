@@ -13,9 +13,9 @@ public class BaseConverter {
         double match = 0;
         double Cel;
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter degrees Celsius: ");
+        System.out.print("Enter degrees Celsius: ");
         Cel = in.nextDouble();
-        System.out.println("Enter the desired unit of measurement: ('K' for Kelvin or 'F' for Fahrenheit)");
+        System.out.print("Enter the desired unit of measurement ('K' for Kelvin or 'F' for Fahrenheit): ");
         input = in.next().charAt(0);
         if(input == 'K'){
             match = Cel + 273.15;
